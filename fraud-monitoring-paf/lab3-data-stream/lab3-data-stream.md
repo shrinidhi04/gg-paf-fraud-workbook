@@ -43,6 +43,10 @@ Show the details for the data stream FraudTxnStream.
 
 Review the summary to get more information about the Data Stream.
 
+The dashboard should show that the downstream case-store listener is connected after the Data Stream and bridge are running.
+
+![Enterprise Fraud Monitoring Console showing the Data Stream connected status](images/data-stream-connected.jpg)
+
 For additional detail, request the stream YAML when the operations flow supports it:
 
 ```text

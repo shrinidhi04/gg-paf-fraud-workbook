@@ -52,3 +52,7 @@ WHERE transaction_id = 'TXN-HOL-REPLACE-WITH-YOUR-ID';
 ```
 
 Compare the text stored in the SUMMARY column with the dashboard brief seen in the Enterprise Fraud Monitoring Console.
+
+This representative successful run shows the PAF response attached to the selected dashboard case. Your transaction ID and generated wording will differ.
+
+![Dashboard case with the attached PAF analyst brief](../lab5-verify-pipeline/images/fraud-dashboard-v33.png)

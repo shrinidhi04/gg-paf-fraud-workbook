@@ -54,6 +54,10 @@ A Python bridge processes the Data Stream event, applies the demonstration risk 
 
 Low-risk transactions may not create an open fraud case or trigger an AI brief if the configured threshold excludes them. Use an eligible high-risk event from the supplied DML set to validate the analyst brief.
 
+The following image shows a successful validation run. Event and alert counts vary between runs; use it to recognize the connected pipeline and an attached PAF brief, not as fixed expected counts.
+
+![Successful fraud monitoring dashboard with a PAF analyst brief attached](images/fraud-dashboard-v33.png)
+
 ## Task 3: Read the analyst brief
 
 Expected sections include:

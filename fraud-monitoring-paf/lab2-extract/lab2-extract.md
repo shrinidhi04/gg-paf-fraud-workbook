@@ -36,6 +36,10 @@ In this lab, you learn to:
 
 3. Click **Show** to maximize the **GoldenGate MCP + PAF Chat** panel if you minimized it previously.
 
+The chat panel is where you submit GoldenGate MCP requests throughout this lab.
+
+![GoldenGate MCP and PAF Chat panel used to submit Extract requests](images/mcp-chat-list-extracts.jpg)
+
 ## Task 2: Discover the source connection
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
@@ -112,4 +116,3 @@ Review the actual error and resolve the reported issue before restarting.
 5. Click **Parameters** to review the Extract configuration created using the GoldenGate MCP server.
 
 You may now __proceed to the next lab__.
-

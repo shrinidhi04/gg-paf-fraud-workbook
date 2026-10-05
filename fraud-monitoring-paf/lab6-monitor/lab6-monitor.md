@@ -69,6 +69,10 @@ Show capture statistics for extract EXFRAUD for YAN_POS.PAYMENT_TRANSACTION, inc
 
 The response uses capture statistics and identifies the interval. Counts may include earlier activity. Compare the before and after values when validating a particular batch.
 
+Use the GoldenGate MCP + PAF Chat panel for these operational monitoring requests.
+
+![GoldenGate MCP and PAF Chat panel used for GoldenGate monitoring requests](images/mcp-operations-chat.jpg)
+
 **NOTE**: Wait a minute or so and run the same command again if you run into an error containing the following message `Compartment quota max-on-demand-chat-request-per-minute-count is exceeded`.
 
 You may now __proceed to the next lab__.

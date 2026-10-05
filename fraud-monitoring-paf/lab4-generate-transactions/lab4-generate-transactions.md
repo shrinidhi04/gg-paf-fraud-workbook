@@ -34,6 +34,10 @@ In this lab, you will:
 3. Wait for the command to complete.
 4. Record the generated transaction IDs. In this workshop, they are expected to begin with `TXN-HOL-`.
 
+The following image shows a successful script run from the lab compute instance. Your transaction IDs will differ.
+
+![noVNC terminal showing committed source payment transactions](images/novnc-terminal.jpg)
+
 ## Task 2: Verify the source records
 
 1. Return to the Oracle Cloud console and use the navigation menu to navigate back to **Oracle AI Database**, **Autonomous AI Database**, and click **AIATP&lt;LiveLab ID&gt;**. Ensure that the correct Compartment is selected in **Applied filters**.
