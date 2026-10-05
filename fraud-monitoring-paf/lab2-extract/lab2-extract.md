@@ -36,46 +36,46 @@ In this lab, you learn to:
 
 3. Click **Show** to maximize the **GoldenGate MCP + PAF Chat** panel if you minimized it previously.
 
-The chat panel is where you submit GoldenGate MCP requests throughout this lab.
+   The chat panel is where you submit GoldenGate MCP requests throughout this lab.
 
-![GoldenGate MCP and PAF Chat panel used to submit Extract requests](images/mcp-chat-list-extracts.jpg)
+    ![GoldenGate MCP and PAF Chat panel used to submit Extract requests](images/mcp-chat-list-extracts.jpg)
 
 ## Task 2: Discover the source connection
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
 
-List domains
+   List domains
 
-```text
-List the GoldenGate domains.
-```
+    ```text
+    List the GoldenGate domains.
+    ```
 
-List connections:
+   List connections:
 
-```text
-List the GoldenGate connections in the OracleGoldenGate domain.
-```
-Confirm that the source connection is present. The expected connection name is:
+    ```text
+    List the GoldenGate connections in the OracleGoldenGate domain.
+    ```
+   Confirm that the source connection is present. The expected connection name is:
 
-```text
-ATP_Fraud_Source_Connection
-```
+    ```text
+    ATP_Fraud_Source_Connection
+    ```
 
 ## Task 3: Create the Extract
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
 
-```text
-List GoldenGate extracts.
-```
+    ```text
+    List GoldenGate extracts.
+    ```
 
 In a brand new environment, it should return `No GoldenGate Extracts are configured.`
 
 2. Create the Extract using the following prompt.
 
-```text
-Create a new Extract called EXFRAUD using trail ft and the ATP connection. Capture data from table PAYMENT_TRANSACTION in schema YAN_POS.
-```
+    ```text
+    Create a new Extract called EXFRAUD using trail ft and the ATP connection. Capture data from table PAYMENT_TRANSACTION in schema YAN_POS.
+    ```
 
 Wait until the Extract ``EXFRAUD`` is created successfully before issuing another request. If the operations flow requests confirmation or missing parameters, provide them for this Extract.
 
@@ -83,17 +83,17 @@ Wait until the Extract ``EXFRAUD`` is created successfully before issuing anothe
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
 
-Start the Extract
+   Start the Extract
 
-```text
-Start extract EXFRAUD.
-```
+    ```text
+    Start extract EXFRAUD.
+    ```
 
-Then verify its details and status:
+   Then verify its details and status:
 
-```text
-Show details and status for extract EXFRAUD.
-```
+    ```text
+    Show details and status for extract EXFRAUD.
+    ```
 
 The Extract should be started successfully.
 
@@ -101,9 +101,9 @@ Confirm that the configured trail is `ft` and that the table statement refers to
 
 If the Extract stops or abends, request its report:
 
-```text
-Show extract report for EXFRAUD.
-```
+    ```text
+    Show extract report for EXFRAUD.
+    ```
 
 Review the actual error and resolve the reported issue before restarting. 
 
@@ -116,3 +116,7 @@ Review the actual error and resolve the reported issue before restarting.
 5. Click **Parameters** to review the Extract configuration created using the GoldenGate MCP server.
 
 You may now __proceed to the next lab__.
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni

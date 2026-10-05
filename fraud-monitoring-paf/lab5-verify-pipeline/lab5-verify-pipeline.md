@@ -31,11 +31,7 @@ In this lab, you will:
 
 **NOTE**: Do not rerun the script immediately if the dashboard is not up to date yet. First confirm that the inserts completed, then allow some time for the Extract and Data Stream to complete.
 
-Use this path to understand the expected flow:
-
-```text
-Source Oracle Autonomous AI Database -> Extract EXFRAUD -> Trail ft -> Data Stream FraudTxnStream -> Python bridge -> Target case store -> PAF published agent -> OCI GenAI -> Stored analyst brief -> Dashboard
-```
+   Use this path to understand the expected flow: Source Oracle Autonomous AI Database -> Extract EXFRAUD -> Trail ft -> Data Stream FraudTxnStream -> Python bridge -> Target case store -> PAF published agent -> OCI GenAI -> Stored analyst brief -> Dashboard.
 
 A Python bridge processes the Data Stream event, applies the demonstration risk rules, writes case information, and invokes the published PAF AI Agent for an explanation. The AI response is stored and displayed in the Enterprise Fraud Monitoring Console for the corresponding transaction.
 
@@ -52,30 +48,30 @@ A Python bridge processes the Data Stream event, applies the demonstration risk 
    - The case status is shown where applicable.
    - A PAF-generated analyst brief is displayed for the same transaction ID when the event is eligible.
 
-Low-risk transactions may not create an open fraud case or trigger an AI brief if the configured threshold excludes them. Use an eligible high-risk event from the supplied DML set to validate the analyst brief.
+   Low-risk transactions may not create an open fraud case or trigger an AI brief if the configured threshold excludes them. Use an eligible high-risk event from the supplied DML set to validate the analyst brief.
 
-The following image shows a successful validation run. Event and alert counts vary between runs; use it to recognize the connected pipeline and an attached PAF brief, not as fixed expected counts.
+   The following image shows a successful validation run. Event and alert counts vary between runs; use it to recognize the connected pipeline and an attached PAF brief, not as fixed expected counts.
 
-![Successful fraud monitoring dashboard with a PAF analyst brief attached](images/fraud-dashboard-v33.png)
+    ![Successful fraud monitoring dashboard with a PAF analyst brief attached](images/fraud-dashboard-v33.png)
 
 ## Task 3: Read the analyst brief
 
-Expected sections include:
+1. Expected sections include:
 
-```text
-## Alert Review Summary
-## Why It Is Suspicious or Normal
-```
+    ```text
+    ## Alert Review Summary
+    ## Why It Is Suspicious or Normal
+    ```
 
-followed by:
+   followed by:
 
-```text
-## Evidence Summary
-## Recommended Analyst Action
-## Case Attachment
-```
+    ```text
+    ## Evidence Summary
+    ## Recommended Analyst Action
+    ## Case Attachment
+    ```
 
-Check that the explanation cites the selected transaction's actual amount, merchant, country flow, channel, device, and supplied risk signals. Exact wording may vary depending on the Large Language Model (LLM) being used.
+2. Check that the explanation cites the selected transaction's actual amount, merchant, country flow, channel, device, and supplied risk signals. Exact wording may vary depending on the Large Language Model (LLM) being used.
 
 ## Task 4: Observe automatic refresh
 
@@ -85,3 +81,7 @@ Check that the explanation cites the selected transaction's actual amount, merch
 4. Verify that the selected case and displayed brief continue to refer to the same transaction.
 
 You may now __proceed to the next lab__.
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni

@@ -6,6 +6,14 @@ These review steps explain how the prepared services support the workshop labs. 
 
 Estimated time: 15 minutes.
 
+### Objectives
+
+In this lab, you will:
+
+- Review the prepared PAF workflows that support GoldenGate operations and fraud analysis.
+- Review MCP server registration and model configuration.
+- Compare the stored AI analyst brief with the dashboard response.
+
 ### Prerequisites
 
 - This lab assumes that you completed all preceding labs.
@@ -19,10 +27,10 @@ Estimated time: 15 minutes.
 5. Locate the published `goldengate-ops - Runtime Published` flow and click **Edit**.
 6. Review the connections in the canvas:
 
-   ```text
-   Chat input -> Prompt -> Agent -> Chat output
-   MCP server -> Agent tools input
-   ```
+    ```text
+    Chat input -> Prompt -> Agent -> Chat output
+    MCP server -> Agent tools input
+    ```
 
 7. Review the **Prompt** template and **Agent** Custom instructions. The flow must permit explicitly requested Extract and Data Stream creation or Start operations.
 8. Click the **Allowed tools** drop-down in the **MCP server** box to display the list of MCP tools. MCP tools include *create_extract*, *create_replicat*, *add_trandata_table* and more.
@@ -41,18 +49,22 @@ Estimated time: 15 minutes.
 1. Return to the Oracle Cloud console and use the navigation menu to navigate back to **Oracle AI Database**, **Autonomous AI Database**, and click **AIATP&lt;LiveLab ID&gt;**.
 2. On the **AIATP&lt;LiveLab ID&gt;** Details page, click **Database actions**, and then **SQL**.
 
-**NOTE**: Use the **AIATP&lt;LiveLab ID&gt;** database credentials in the Workshop details to log in to Database actions if needed, and then click **SQL**.
+   **NOTE**: Use the **AIATP&lt;LiveLab ID&gt;** database credentials in the Workshop details to log in to Database actions if needed, and then click **SQL**.
 
 4. Enter the following select statement (replace the example transaction_id with one from previous labs), and then click **Run Script**:
 
-```sql
-SELECT transaction_id, summary
-FROM YAN_POS.AI_ANALYST_BRIEF
-WHERE transaction_id = 'TXN-HOL-REPLACE-WITH-YOUR-ID';
-```
+    ```sql
+    SELECT transaction_id, summary
+    FROM YAN_POS.AI_ANALYST_BRIEF
+    WHERE transaction_id = 'TXN-HOL-REPLACE-WITH-YOUR-ID';
+    ```
 
-Compare the text stored in the SUMMARY column with the dashboard brief seen in the Enterprise Fraud Monitoring Console.
+   Compare the text stored in the SUMMARY column with the dashboard brief seen in the Enterprise Fraud Monitoring Console.
 
-This representative successful run shows the PAF response attached to the selected dashboard case. Your transaction ID and generated wording will differ.
+   This representative successful run shows the PAF response attached to the selected dashboard case. Your transaction ID and generated wording will differ.
 
-![Dashboard case with the attached PAF analyst brief](../lab5-verify-pipeline/images/fraud-dashboard-v33.png)
+    ![Dashboard case with the attached PAF analyst brief](../lab5-verify-pipeline/images/fraud-dashboard-v33.png)
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni

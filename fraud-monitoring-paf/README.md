@@ -2,6 +2,13 @@
 
 LiveLabs workbook draft for the single-compute fraud monitoring HOL.
 
+Estimated Time: 60-90 minutes.
+
+### Objectives
+
+- Maintain the LiveLabs workbook source for the fraud monitoring HOL.
+- Keep workshop labs, manifests, and screenshots in the expected LiveLabs folder structure.
+
 ## Workshop structure
 
 - `workshops/livelabs/manifest.json` defines the attendee workshop sequence.
@@ -13,3 +20,7 @@ This repository contains workshop documentation only. Do not add Terraform state
 ## Review status
 
 The supplied draft has been moved into the LiveLabs folder structure. Environment access instructions, screenshots, and end-to-end attendee validation remain to be completed before this workbook is ready for publication.
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni

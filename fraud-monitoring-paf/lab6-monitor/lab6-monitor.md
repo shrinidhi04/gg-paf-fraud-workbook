@@ -47,32 +47,36 @@ In this lab, you will:
 
 1. Return to the **Enterprise Fraud Monitoring Console**, enter these requests individually in the **GoldenGate MCP + PAF Chat** panel, then click **Send**. Wait for each result before proceeding.
 
-```text
-List GoldenGate extracts.
-```
+    ```text
+    List GoldenGate extracts.
+    ```
 
-```text
-Show extract report for EXFRAUD.
-```
+    ```text
+    Show extract report for EXFRAUD.
+    ```
 
-```text
-Show details for GoldenGate data stream FraudTxnStream.
-```
+    ```text
+    Show details for GoldenGate data stream FraudTxnStream.
+    ```
 
-```text
-What is the current status and lag for extract EXFRAUD?
-```
+    ```text
+    What is the current status and lag for extract EXFRAUD?
+    ```
 
-```text
-Show capture statistics for extract EXFRAUD for YAN_POS.PAYMENT_TRANSACTION, including inserts, updates, and deletes when available. State the statistics interval.
-```
+    ```text
+    Show capture statistics for extract EXFRAUD for YAN_POS.PAYMENT_TRANSACTION, including inserts, updates, and deletes when available. State the statistics interval.
+    ```
 
-The response uses capture statistics and identifies the interval. Counts may include earlier activity. Compare the before and after values when validating a particular batch.
+   The response uses capture statistics and identifies the interval. Counts may include earlier activity. Compare the before and after values when validating a particular batch.
 
-Use the GoldenGate MCP + PAF Chat panel for these operational monitoring requests.
+   Use the GoldenGate MCP + PAF Chat panel for these operational monitoring requests.
 
-![GoldenGate MCP and PAF Chat panel used for GoldenGate monitoring requests](images/mcp-operations-chat.jpg)
+    ![GoldenGate MCP and PAF Chat panel used for GoldenGate monitoring requests](images/mcp-operations-chat.jpg)
 
 **NOTE**: Wait a minute or so and run the same command again if you run into an error containing the following message `Compartment quota max-on-demand-chat-request-per-minute-count is exceeded`.
 
 You may now __proceed to the next lab__.
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni

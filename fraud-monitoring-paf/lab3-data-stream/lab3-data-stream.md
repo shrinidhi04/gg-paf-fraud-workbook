@@ -27,9 +27,9 @@ In this lab, you will:
 
 1. In the **GoldenGate MCP + PAF Chat** panel, type the following and click Send.
 
-```text
-Create the data stream FraudTxnStream using the trail from Extract EXFRAUD
-```
+    ```text
+    Create the data stream FraudTxnStream using the trail from Extract EXFRAUD
+    ```
 
 Wait until the Data Stream is created successfully before issuing another request. If the operations flow requests confirmation or missing parameters, provide them for this Data Stream.
 
@@ -37,21 +37,21 @@ Wait until the Data Stream is created successfully before issuing another reques
 
 2. Check on the status and details of the Data Stream using the following prompt.
 
-```text
-Show the details for the data stream FraudTxnStream.
-```
+    ```text
+    Show the details for the data stream FraudTxnStream.
+    ```
 
 Review the summary to get more information about the Data Stream.
 
-The dashboard should show that the downstream case-store listener is connected after the Data Stream and bridge are running.
+   The dashboard should show that the downstream case-store listener is connected after the Data Stream and bridge are running.
 
-![Enterprise Fraud Monitoring Console showing the Data Stream connected status](images/data-stream-connected.jpg)
+    ![Enterprise Fraud Monitoring Console showing the Data Stream connected status](images/data-stream-connected.jpg)
 
 For additional detail, request the stream YAML when the operations flow supports it:
 
-```text
-Show the YAML for GoldenGate data stream FraudTxnStream.
-```
+    ```text
+    Show the YAML for GoldenGate data stream FraudTxnStream.
+    ```
 
 ## Task 2: Review the Data Stream in the OCI GoldenGate Console
 
@@ -64,3 +64,7 @@ Show the YAML for GoldenGate data stream FraudTxnStream.
 3. Click **FraudTxnStream** and review the Data Stream details including its YAML definition and statistics.
 
 You may now __proceed to the next lab__.
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni

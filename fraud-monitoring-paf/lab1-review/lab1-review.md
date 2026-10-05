@@ -67,9 +67,9 @@ You can also access the deployment console directly using the URL provided on th
 
 4. You will use the __GoldenGate MCP + PAF Chat__ panel to interact with OCI GoldenGate using the GoldenGate MCP server.
 
-The following image shows the Enterprise Fraud Monitoring Console connected to the Data Stream target case store, with the GoldenGate MCP + PAF Chat panel available.
+   The following image shows the Enterprise Fraud Monitoring Console connected to the Data Stream target case store, with the GoldenGate MCP + PAF Chat panel available.
 
-![Enterprise Fraud Monitoring Console with GoldenGate MCP and PAF Chat panel](images/fraud-console-connected.jpg)
+    ![Enterprise Fraud Monitoring Console with GoldenGate MCP and PAF Chat panel](images/fraud-console-connected.jpg)
 
 5. Type `List GoldenGate extracts and replicats.` and click __Send__ to ask the MCP server to return the current list of Extracts and Replicats. It should not list any.
 
@@ -84,3 +84,7 @@ The following image shows the Enterprise Fraud Monitoring Console connected to t
 3. Type `ls -al` to review the list of files in the Home directory. Make sure that **run_fraud_sql_events.sh** is listed.
 
 You may now __proceed to the next lab__.
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni

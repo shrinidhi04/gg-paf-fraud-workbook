@@ -6,7 +6,7 @@
 
 Fraud operations need timely payment information and explanations grounded in transaction evidence. This workshop guides you through how to capture data in real-time with Oracle Cloud Infrastructure (OCI) GoldenGate and its Model Context Protocol (MCP) server, capture changed data from an Oracle AI Autonomous Database, and run AI Agents in Oracle AI Database Private Agent Factory (PAF) to build a fraud monitoring solution on OCI.
 
-Estimated workshop time: 60-90 minutes.
+Estimated Workshop Time: 60-90 minutes.
 
 ### About Oracle Cloud Infrastructure GoldenGate
 
@@ -38,3 +38,7 @@ In this workshop, you will:
 - Familiarity with Oracle AI Database Private Agent Factory is helpful, but not required
 - Familiarity with Oracle Cloud Infrastructure is helpful, but not required
 - An Oracle Cloud Account - Please view this workshop's LiveLabs landing page to see which environments are supported
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni

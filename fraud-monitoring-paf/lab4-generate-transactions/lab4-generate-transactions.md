@@ -27,16 +27,16 @@ In this lab, you will:
 
 2. The noVNC session opens up and shows the Terminal. Type the following command and press Enter:
 
-   ```bash
-   sh run_fraud_sql_events.sh
-   ```
+    ```bash
+    sh run_fraud_sql_events.sh
+    ```
 
 3. Wait for the command to complete.
 4. Record the generated transaction IDs. In this workshop, they are expected to begin with `TXN-HOL-`.
 
-The following image shows a successful script run from the lab compute instance. Your transaction IDs will differ.
+   The following image shows a successful script run from the lab compute instance. Your transaction IDs will differ.
 
-![noVNC terminal showing committed source payment transactions](images/novnc-terminal.jpg)
+    ![noVNC terminal showing committed source payment transactions](images/novnc-terminal.jpg)
 
 ## Task 2: Verify the source records
 
@@ -50,14 +50,18 @@ __NOTE__: If you're using the LiveLab Sandbox environment, you can find your com
 
 3. Enter the following select statement, and then click **Run Script**:
 
-```sql
-SELECT transaction_id, customer_id, amount, merchant_name, event_ts
-FROM YAN_POS.PAYMENT_TRANSACTION
-WHERE transaction_id LIKE 'TXN-HOL-%'
-ORDER BY event_ts DESC
-FETCH FIRST 10 ROWS ONLY;
-```
+    ```sql
+    SELECT transaction_id, customer_id, amount, merchant_name, event_ts
+    FROM YAN_POS.PAYMENT_TRANSACTION
+    WHERE transaction_id LIKE 'TXN-HOL-%'
+    ORDER BY event_ts DESC
+    FETCH FIRST 10 ROWS ONLY;
+    ```
 
 Write down at least one transaction ID and its insertion time for the next lab.
 
 You may now __proceed to the next lab__.
+
+## Acknowledgements
+
+- **Author** - Shrinidhi Kulkarni
