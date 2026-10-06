@@ -29,13 +29,21 @@ In this lab, you will:
 ## Task 1: View GoldenGate performance metrics
 
 1. Go back to the OCI GoldenGate Console. 
+    ![GoldenGate console showing EXFRAUD in the Extracts list](images/task1-step1-0.png)
+
+    ![EXFRAUD status and messages overview](images/task1-step1-1.png)
+
 
 **NOTE**: If needed, open the deployment details in the OCI Console and click **Launch Console**. If prompted, enter the username and password found on the __LiveLabs Sandbox login page__, then click **Sign In**
 
 2. Click **Extracts**, then click **EXFRAUD**
 3. Click **Statistics** and review the number of Inserts that were processed by the Extract
+    ![EXFRAUD statistics showing processed inserts](images/task1-step3.png)
+
 
 4. Click **Metrics** and review the charts and statistics for the Extract. Click **Database Statistics** to review more information about the database activity.
+    ![EXFRAUD metrics and database statistics](images/task1-step4.png)
+
 
 ## Task 2: View OCI GoldenGate metrics in the OCI Console
 
@@ -46,6 +54,16 @@ In this lab, you will:
 ## Task 3: Query GoldenGate operations using the MCP server
 
 1. Return to the **Enterprise Fraud Monitoring Console**, enter these requests individually in the **GoldenGate MCP + PAF Chat** panel, then click **Send**. Wait for each result before proceeding.
+    ![GoldenGate MCP monitoring request for Extract list](images/task3-step1.png)
+
+    ![GoldenGate MCP monitoring request for Extract report](images/task3-step2.png)
+
+    ![GoldenGate MCP monitoring request for Data Stream details](images/task3-step3.png)
+
+    ![GoldenGate MCP monitoring request for Extract lag](images/task3-step4.png)
+
+    ![GoldenGate MCP monitoring request for capture statistics](images/task3-step5.png)
+
 
     ```text
     List GoldenGate extracts.
@@ -70,8 +88,6 @@ In this lab, you will:
    The response uses capture statistics and identifies the interval. Counts may include earlier activity. Compare the before and after values when validating a particular batch.
 
    Use the GoldenGate MCP + PAF Chat panel for these operational monitoring requests.
-
-    ![GoldenGate MCP and PAF Chat panel used for GoldenGate monitoring requests](images/mcp-operations-chat.jpg)
 
 **NOTE**: Wait a minute or so and run the same command again if you run into an error containing the following message `Compartment quota max-on-demand-chat-request-per-minute-count is exceeded`.
 

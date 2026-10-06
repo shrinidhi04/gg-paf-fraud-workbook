@@ -26,6 +26,8 @@ In this lab, you will:
    - Copy and paste it in your laptop browser to access the Compute instance.
 
 2. The noVNC session opens up and shows the Terminal. Type the following command and press Enter:
+    ![noVNC terminal with run_fraud_sql_events.sh ready to run](images/task1-step2.png)
+
 
     ```bash
     sh run_fraud_sql_events.sh
@@ -41,14 +43,22 @@ In this lab, you will:
 ## Task 2: Verify the source records
 
 1. Return to the Oracle Cloud console and use the navigation menu to navigate back to **Oracle AI Database**, **Autonomous AI Database**, and click **AIATP&lt;LiveLab ID&gt;**. Ensure that the correct Compartment is selected in **Applied filters**.
+    ![Oracle Cloud navigation for Autonomous AI Database](images/task2-step1.png)
+
+    ![Autonomous AI Database details page](images/task2-step1-1.png)
+
 
 __NOTE__: If you're using the LiveLab Sandbox environment, you can find your compartment number in the Reservation Information panel (View Login Info) of the workshop instructions.
 
 2. On the **AIATP&lt;LiveLab ID&gt;** Details page, click **Database actions**, and then select **SQL**.
+    ![Database actions menu with SQL selected](images/task2-step2.png)
+
 
 **NOTE**: Use the **AIATP&lt;LiveLab ID&gt;** database credentials in the Workshop details to log in to Database actions if needed, and then click **SQL**.
 
 3. Enter the following select statement, and then click **Run Script**:
+    ![SQL worksheet showing the source transaction query result](images/task2-step3.png)
+
 
     ```sql
     SELECT transaction_id, customer_id, amount, merchant_name, event_ts

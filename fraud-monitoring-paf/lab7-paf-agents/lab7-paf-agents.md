@@ -21,9 +21,17 @@ In this lab, you will:
 ## Task 1: Review the Oracle AI Private Agent Factory workflows
 
 1. Find the PAF URL, username, and password on the __LiveLabs Sandbox login page__. 
+    ![LiveLabs reservation information showing the PAF URL](images/task1-step1.png)
+
 2. Click Open Link or copy and paste the URL into your browser. On the security warning page, click **Advanced** and select **Proceed to ...**. 
+    ![PAF browser security warning before proceeding](images/task1-step2.png)
+
 3. Enter the username and password and click **Sign In**.
+    ![PAF sign in page](images/task1-step3.png)
+
 4. Open **My Custom Flows** under AGENT_FACTORY.
+    ![PAF My Custom Flows page](images/task1-step4.png)
+
 5. Locate the published `goldengate-ops - Runtime Published` flow and click **Edit**.
 6. Review the connections in the canvas:
 
@@ -34,15 +42,27 @@ In this lab, you will:
 
 7. Review the **Prompt** template and **Agent** Custom instructions. The flow must permit explicitly requested Extract and Data Stream creation or Start operations.
 8. Click the **Allowed tools** drop-down in the **MCP server** box to display the list of MCP tools. MCP tools include *create_extract*, *create_replicat*, *add_trandata_table* and more.
+    ![PAF MCP server allowed tools list](images/task1-step8.png)
+
 9. Go back to **My Custom Flows** under **AGENT_FACTORY** and click **Edit** next to the published fraud analyst flow, called `fraud-analyst-bridge - Runtime Published`. Click **Continue without saving** as many times as needed if prompted.
 10. Review its **Prompt**, the selected OCI model for the Agent, and published integration configuration.
 
 ## Task 2: Review MCP registration and the OCI model
 
 1. Open **MCP Servers** under **UTILITIES** in PAF, find `goldengate-dstest` and click on the **Pencil icon** to review its configuration.
+    ![PAF MCP Servers page showing goldengate-dstest](images/task2-step1.png)
+
 2. Review the registered **Server URL** generated for this Compute instance. 
+    ![PAF MCP server configuration with Server URL](images/task2-step2.png)
+
 3. Click **Test connection** to review the connection status and click **Cancel**.
+    ![PAF MCP server test connection result](images/task2-step3.png)
+
 4. Open **Model Management** under **SETTINGS** and inspect the model selected by the agent: SpaceXAI Grok. Click the **Actions** menu and select **Edit details** to review the Model ID, OCI Generative AI endpoint, and Authentication.
+    ![PAF Model Management model list](images/task2-step4-0.png)
+
+    ![PAF model details for SpaceXAI Grok](images/task2-step4-1.png)
+
 
 ## Task 3: Review the stored AI response
 
@@ -51,7 +71,9 @@ In this lab, you will:
 
    **NOTE**: Use the **AIATP&lt;LiveLab ID&gt;** database credentials in the Workshop details to log in to Database actions if needed, and then click **SQL**.
 
-4. Enter the following select statement (replace the example transaction_id with one from previous labs), and then click **Run Script**:
+3. Enter the following select statement (replace the example transaction_id with one from previous labs), and then click **Run Script**:
+    ![Database Actions SQL result showing stored AI analyst brief](images/task3-step3.png)
+
 
     ```sql
     SELECT transaction_id, summary

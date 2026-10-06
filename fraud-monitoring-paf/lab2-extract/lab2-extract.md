@@ -31,10 +31,14 @@ In this lab, you learn to:
 ## Task 1: Connect to the Enterprise Fraud Monitoring Console
 
 1. Find the Fraud Dashboard URL on the __LiveLabs Sandbox login page__.
+    ![LiveLabs reservation information showing the Fraud Dashboard URL](images/task1-step1.png)
+
 
 2. Open the link or copy and paste it in your laptop browser and connect to the **Enterprise Fraud Monitoring Console**.
 
 3. Click **Show** to maximize the **GoldenGate MCP + PAF Chat** panel if you minimized it previously.
+    ![GoldenGate MCP and PAF Chat panel expanded](images/task1-step3.png)
+
 
    The chat panel is where you submit GoldenGate MCP requests throughout this lab.
 
@@ -43,6 +47,10 @@ In this lab, you learn to:
 ## Task 2: Discover the source connection
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
+    ![GoldenGate MCP request to list domains](images/task2-step1-0.png)
+
+    ![GoldenGate MCP response showing the source connection](images/task2-step1-1.png)
+
 
    List domains
 
@@ -64,6 +72,8 @@ In this lab, you learn to:
 ## Task 3: Create the Extract
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
+    ![GoldenGate MCP request to list extracts](images/task3-step1.png)
+
 
     ```text
     List GoldenGate extracts.
@@ -72,6 +82,8 @@ In this lab, you learn to:
 In a brand new environment, it should return `No GoldenGate Extracts are configured.`
 
 2. Create the Extract using the following prompt.
+    ![GoldenGate MCP prompt to create the EXFRAUD Extract](images/task3-step2.png)
+
 
     ```text
     Create a new Extract called EXFRAUD using trail ft and the ATP connection. Capture data from table PAYMENT_TRANSACTION in schema YAN_POS.
@@ -82,6 +94,10 @@ Wait until the Extract ``EXFRAUD`` is created successfully before issuing anothe
 ## Task 4: Start and monitor the Extract
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
+    ![GoldenGate MCP prompts to start and monitor EXFRAUD](images/task4-step1-0.png)
+
+    ![GoldenGate MCP response showing EXFRAUD status](images/task4-step1-1.png)
+
 
    Start the Extract
 

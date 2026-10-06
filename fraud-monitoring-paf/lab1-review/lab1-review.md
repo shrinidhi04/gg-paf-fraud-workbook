@@ -24,6 +24,8 @@ In this lab, you learn to:
 ## Task 1: Review the OCI GoldenGate deployment and connection
 
 1. In the Oracle Cloud console, open the __navigation menu__, navigate to __Oracle AI Database__, and then select __GoldenGate__.
+    ![Oracle Cloud navigation menu with GoldenGate under Oracle AI Database](images/task1-step1.png)
+
 
 2. If you're prompted to take a tour, you can choose to continue with the tour or close it.
 
@@ -32,10 +34,20 @@ In this lab, you learn to:
 __NOTE__: If you're using the LiveLab Sandbox environment, you can find your compartment number in the Reservation Information panel (View Login Info) of the workshop instructions.
 
 4. In the GoldenGate menu page, click __Deployments__.
+    ![GoldenGate menu showing Deployments](images/task1-step4.png)
+
 
 __NOTE__: If using the LiveLab Sandbox environment, select your LiveLab compartment from the Applied filters dropdown.
 
 5. Select __OCI-GoldenGate-Deployment__ in the Deployments list.
+    ![GoldenGate deployments list with OCI-GoldenGate-Deployment](images/task1-step5-0.png)
+
+    ![GoldenGate deployment details page](images/task1-step5-1.png)
+
+    ![Assigned connections tab on the GoldenGate deployment](images/task1-step5-2.png)
+
+    ![ATP Fraud Source Connection assigned to the deployment](images/task1-step5-3.png)
+
 
 You can perform the following actions on the deployment details page:
 
@@ -60,8 +72,12 @@ You can also access the deployment console directly using the URL provided on th
 ## Task 2: Connect to the Enterprise Fraud Monitoring Console
 
 1. Find the **Fraud Dashboard URL** on the __LiveLabs Sandbox login page__.
+    ![LiveLabs reservation information showing the Fraud Dashboard URL](images/task2-step1.png)
+
 
 2. Open the link or copy and paste it in your laptop browser and connect to the **Enterprise Fraud Monitoring Console**.
+    ![Enterprise Fraud Monitoring Console opened in the browser](images/task2-step2.png)
+
 
 3. The __Enterprise Fraud Monitoring Console__ is a custom application built for this workshop to trace a new transaction through capture, streaming, storage, risk scoring, and analysis.
 
@@ -72,6 +88,8 @@ You can also access the deployment console directly using the URL provided on th
     ![Enterprise Fraud Monitoring Console with GoldenGate MCP and PAF Chat panel](images/fraud-console-connected.jpg)
 
 5. Type `List GoldenGate extracts and replicats.` and click __Send__ to ask the MCP server to return the current list of Extracts and Replicats. It should not list any.
+    ![GoldenGate MCP and PAF Chat prompt for listing extracts and replicats](images/task2-step5.png)
+
 
 6. Click __Hide__ to minimize the Chat panel.
 
@@ -82,6 +100,8 @@ You can also access the deployment console directly using the URL provided on th
 2. Open the link or copy and paste it in your laptop browser to access the Compute instance.
 
 3. Type `ls -al` to review the list of files in the Home directory. Make sure that **run_fraud_sql_events.sh** is listed.
+    ![noVNC terminal showing run_fraud_sql_events.sh in the home directory](images/task3-step3.png)
+
 
 You may now __proceed to the next lab__.
 
