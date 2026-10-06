@@ -8,6 +8,12 @@ Fraud operations need timely payment information and explanations grounded in tr
 
 Estimated Workshop Time: 60-90 minutes.
 
+### Architecture
+
+The lab environment uses Oracle AI Autonomous Database as the payment transaction source, OCI GoldenGate for real-time capture and streaming, Oracle AI Database Private Agent Factory for fraud analysis, and the Enterprise Fraud Monitoring Console for end-to-end monitoring.
+
+![Real-Time AI Fraud Monitoring Architecture](images/workshop-architecture.svg)
+
 ### About Oracle Cloud Infrastructure GoldenGate
 
 Oracle Cloud Infrastructure (OCI) GoldenGate is a fully managed, native cloud service that moves data in real-time, at scale. OCI GoldenGate processes data as it moves from one or more data management systems to target databases. You can also design, run, orchestrate, and monitor data replication, verify data, transform data, and analyze streaming data in real time without having to allocate or manage any compute environments.
