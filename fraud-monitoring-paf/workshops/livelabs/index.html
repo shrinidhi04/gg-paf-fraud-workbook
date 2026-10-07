@@ -10,6 +10,17 @@
 
     <script src="https://livelabs.oracle.com/cdn/common/redwood-hol/js/jquery-1.11.0.min.js"></script>
     <script src="https://livelabs.oracle.com/cdn/common/redwood-hol/js/jquery-ui-1.10.4.custom.js"></script>
+    <script>
+        (function () {
+            var cacheToken = "20261007-lab-content-v2";
+            jQuery.ajaxPrefilter(function (options) {
+                if (!options || !options.url || !/(\.md|manifest\.json)(\?|$)/.test(options.url)) {
+                    return;
+                }
+                options.url += (options.url.indexOf("?") === -1 ? "?" : "&") + "llcache=" + cacheToken;
+            });
+        }());
+    </script>
     <script src="https://livelabs.oracle.com/cdn/common/redwood-hol/js/main.min.js"></script>
 
     <link rel="stylesheet" href="https://livelabs.oracle.com/cdn/common/redwood-hol/css/style.min.css" />

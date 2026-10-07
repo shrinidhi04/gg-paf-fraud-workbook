@@ -34,15 +34,16 @@ In this lab, you learn to:
 __NOTE__: If you're using the LiveLab Sandbox environment, you can find your compartment number in the Reservation Information panel (View Login Info) of the workshop instructions.
 
 4. In the GoldenGate menu page, click __Deployments__.
-    ![GoldenGate menu showing Deployments](images/task1-step4.png)
 
+    ![GoldenGate menu showing Deployments](images/task1-step4.png)
 
 __NOTE__: If using the LiveLab Sandbox environment, select your LiveLab compartment from the Applied filters dropdown.
 
 5. Select __OCI-GoldenGate-Deployment__ in the Deployments list.
+
     ![GoldenGate deployments list with OCI-GoldenGate-Deployment](images/task1-step5-0.png)
 
-   The deployment details page opens.
+    The deployment details page opens.
 
     ![GoldenGate deployment details page](images/task1-step5-1.png)
 
@@ -54,7 +55,7 @@ Confirm that the GoldenGate deployment is assigned to the Autonomous Database so
 
 2. Locate the __ATP Fraud Source Connection__ under __Other assigned connections__ at the bottom of the screen.
 
-    ![ATP Fraud Source Connection assigned to the deployment](images/task1-step5-3.png)
+    ![ATP Fraud Source Connection assigned to the deployment](images/task1-step5-2.png)
 
 3. Open the connection's __Actions__ menu, and then select __Test connection__.
 
