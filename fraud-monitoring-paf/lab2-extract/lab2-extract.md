@@ -46,9 +46,7 @@ In this lab, you learn to:
 
 ## Task 2: Discover the source connection
 
-1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
-
-   List domains:
+1. In the **GoldenGate MCP + PAF Chat** panel, submit the following request to list the available GoldenGate domains.
 
     ```text
     List the GoldenGate domains.
@@ -58,13 +56,13 @@ In this lab, you learn to:
 
     ![GoldenGate MCP request to list domains](images/task2-step1-0.png)
 
-   List connections:
+2. Submit the following request to list connections in the `OracleGoldenGate` domain.
 
     ```text
     List the GoldenGate connections in the OracleGoldenGate domain.
     ```
 
-   Confirm that the response includes the source connection. The expected connection name is:
+3. Confirm that the response includes the source connection. The expected connection name is:
 
     ```text
     ATP_Fraud_Source_Connection
@@ -100,9 +98,7 @@ Wait until the Extract ``EXFRAUD`` is created successfully before issuing anothe
 
 ## Task 4: Start and monitor the Extract
 
-1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
-
-   Start the Extract:
+1. In the **GoldenGate MCP + PAF Chat** panel, submit the following request to start the Extract.
 
     ```text
     Start extract EXFRAUD.
@@ -110,7 +106,7 @@ Wait until the Extract ``EXFRAUD`` is created successfully before issuing anothe
 
     ![GoldenGate MCP prompts to start and monitor EXFRAUD](images/task4-step1-0.png)
 
-   Then verify its details and status:
+2. Verify its details and status.
 
     ```text
     Show details and status for extract EXFRAUD.
@@ -124,25 +120,20 @@ Confirm that the configured trail is `ft` and that the table statement refers to
 
 These values confirm that `EXFRAUD` is capturing the payment transaction source table and writing captured changes to trail `ft`, which is used by the Data Stream in the next lab.
 
-If the Extract stops or abends, request its report:
+If the Extract stops or abends, submit `Show extract report for EXFRAUD.` and review the actual error before restarting.
 
-    ```text
-    Show extract report for EXFRAUD.
-    ```
+3. Go back to the OCI GoldenGate deployment in the OCI Console, click **Launch Console**.
 
-Review the actual error and resolve the reported issue before restarting. 
+4. If prompted, enter the username and password found on the __LiveLabs Sandbox login page__, then click **Sign In**.
 
-2. Go back to the OCI GoldenGate deployment in the OCI Console, click **Launch Console**.
+5. Click **Extracts** then click **EXFRAUD**.
 
-3. If prompted, enter the username and password found on the __LiveLabs Sandbox login page__, then click **Sign In**.
-
-4. Click **Extracts** then click **EXFRAUD**.
-
-5. Click **Parameters** to review the Extract configuration created using the GoldenGate MCP server.
+6. Click **Parameters** to review the Extract configuration created using the GoldenGate MCP server.
 
 You may now __proceed to the next lab__.
 
 ## Acknowledgements
 
 - **Author** - Shrinidhi Kulkarni
-- **Contributors** - Julien Testut and Denis Gray, OCI GoldenGate Product Management
+- **Contributors** - Julien Testut, Denis Gray
+- **Team** - OCI GoldenGate Product Management

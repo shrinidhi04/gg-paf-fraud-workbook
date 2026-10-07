@@ -42,12 +42,9 @@ __NOTE__: If using the LiveLab Sandbox environment, select your LiveLab compartm
 5. Select __OCI-GoldenGate-Deployment__ in the Deployments list.
     ![GoldenGate deployments list with OCI-GoldenGate-Deployment](images/task1-step5-0.png)
 
+   The deployment details page opens.
+
     ![GoldenGate deployment details page](images/task1-step5-1.png)
-
-    ![Assigned connections tab on the GoldenGate deployment](images/task1-step5-2.png)
-
-    ![ATP Fraud Source Connection assigned to the deployment](images/task1-step5-3.png)
-
 
 You can perform the following actions on the deployment details page:
 
@@ -60,10 +57,12 @@ You can perform the following actions on the deployment details page:
 - Add tags
 
 6. Click __Assigned connections__.
+    ![Assigned connections tab on the GoldenGate deployment](images/task1-step5-2.png)
 
 7. Locate the __ATP Fraud Source Connection__ under __Other assigned connections__ at the bottom of the screen.
 
 8. Open the connection's __Actions__ menu, and then select __Test connection__.
+    ![ATP Fraud Source Connection assigned to the deployment](images/task1-step5-3.png)
 
 __NOTE__: The test is successful if you see **Connectivity test passed successfully**. If the test fails, wait a minute and click **Test connection** again. Do not continue until the source connection test succeeds.
 
@@ -108,4 +107,5 @@ You may now __proceed to the next lab__.
 ## Acknowledgements
 
 - **Author** - Shrinidhi Kulkarni
-- **Contributors** - Julien Testut and Denis Gray, OCI GoldenGate Product Management
+- **Contributors** - Julien Testut, Denis Gray
+- **Team** - OCI GoldenGate Product Management

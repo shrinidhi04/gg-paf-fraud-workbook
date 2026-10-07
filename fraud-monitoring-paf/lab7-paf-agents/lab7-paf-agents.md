@@ -107,4 +107,5 @@ The test should complete successfully. This confirms that PAF can reach the Gold
 ## Acknowledgements
 
 - **Author** - Shrinidhi Kulkarni
-- **Contributors** - Julien Testut and Denis Gray, OCI GoldenGate Product Management
+- **Contributors** - Julien Testut, Denis Gray
+- **Team** - OCI GoldenGate Product Management
