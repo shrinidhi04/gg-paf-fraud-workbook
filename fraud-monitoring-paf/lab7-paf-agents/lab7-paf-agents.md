@@ -31,8 +31,6 @@ In this lab, you will:
 3. Enter the username and password and click **Sign In**.
     ![PAF sign in page](images/task1-step3.png)
 
-    ![PAF browser security warning before proceeding](images/task1-step2.png)
-
 4. Open **My Custom Flows** under AGENT_FACTORY.
     ![PAF navigation to My Custom Flows](images/task2-step4.png)
 

@@ -45,11 +45,11 @@ Wait until the Data Stream is created successfully before issuing another reques
     Show the details for the data stream FraudTxnStream.
     ```
 
-Review the summary and confirm that `FraudTxnStream` exists and is associated with the trail from `EXFRAUD`.
+    Review the summary and confirm that `FraudTxnStream` exists and is associated with the trail from `EXFRAUD`.
 
-   The dashboard should show that the downstream case-store listener is connected after the Data Stream and bridge are running.
+    The dashboard should show that the downstream case-store listener is connected after the Data Stream and bridge are running.
 
-For additional detail, request the stream YAML when the operations flow supports it:
+3. For additional detail, request the stream YAML when the operations flow supports it:
 
     ```text
     Show the YAML for GoldenGate data stream FraudTxnStream.
@@ -57,7 +57,7 @@ For additional detail, request the stream YAML when the operations flow supports
 
     ![GoldenGate MCP response showing FraudTxnStream details](images/task1-step2.png)
 
-In the YAML output, look for the stream name, source trail, and AsyncAPI/WebSocket details. These confirm that GoldenGate can publish changes from the Extract trail to downstream consumers.
+    In the YAML output, look for the stream name, source trail, and AsyncAPI/WebSocket details. These confirm that GoldenGate can publish changes from the Extract trail to downstream consumers.
 
 ## Task 2: Review the Data Stream in the OCI GoldenGate Console
 
