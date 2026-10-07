@@ -1,157 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="720" viewBox="0 0 1800 720" role="img" aria-labelledby="title desc">
   <title id="title">Real-Time AI Fraud Monitoring Architecture</title>
-  <desc id="desc">Architecture showing payment transactions captured from Oracle Autonomous Database by OCI GoldenGate, streamed to Oracle AI Database Private Agent Factory, and displayed in the Enterprise Fraud Monitoring Console, with monitoring and management tools.</desc>
+  <desc id="desc">Payment transactions are stored in Oracle AI Autonomous Database, captured and streamed by OCI GoldenGate, analyzed by Oracle AI Database Private Agent Factory, and shown in the Enterprise Fraud Monitoring Console.</desc>
   <defs>
     <style>
-      .bg{fill:#fff}
-      .panel{fill:#fbfdff;stroke:#c9d7e8;stroke-width:2}
-      .oci{fill:#fff;stroke:#c9d7e8;stroke-width:2}
-      .gg{fill:#fff3f1;stroke:#f2aba2;stroke-width:2}
-      .paf{fill:#f5fbf4;stroke:#9fd1ae;stroke-width:2}
-      .console{fill:#eff9ff;stroke:#73bdf5;stroke-width:2}
-      .card{fill:#fff;stroke:#c9d7e8;stroke-width:2}
-      .dash{fill:#041915;stroke:#7ab1d8;stroke-width:2}
-      .mgmt{fill:#fbfdff;stroke:#c9d7e8;stroke-width:2;stroke-dasharray:4 4}
-      .h1{font:700 24px Arial,Helvetica,sans-serif;fill:#0b1736}
-      .h2{font:700 18px Arial,Helvetica,sans-serif;fill:#0b1736}
-      .body{font:15px Arial,Helvetica,sans-serif;fill:#24364f}
-      .small{font:13px Arial,Helvetica,sans-serif;fill:#43546a}
-      .blue{fill:#0b75d1}
-      .arrow{stroke:#0b75d1;stroke-width:5;fill:none;marker-end:url(#arrow)}
-      .darkline{stroke:#0b1736;stroke-width:4;fill:none;marker-end:url(#darkArrow)}
-      .icon{stroke:#073b4c;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
-      .redIcon{stroke:#e21b1b;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
-      .whiteText{fill:#eef8f4;font:700 13px Arial,Helvetica,sans-serif}
-      .dashText{fill:#a5b9b2;font:700 10px Arial,Helvetica,sans-serif}
-      .badgeHigh{fill:#ff5f7a}
-      .badgeLow{fill:#35d28a}
-      .metric{fill:#08241e;stroke:#1f4d42;stroke-width:1.5}
+      .page{fill:#fff}.outer{fill:#fbfdff;stroke:#c9d7e8;stroke-width:2}.source{fill:#fbfdff;stroke:#c9d7e8;stroke-width:2}.gg{fill:#fff3f1;stroke:#f2aaa1;stroke-width:2}.paf{fill:#f4fbf5;stroke:#95cca8;stroke-width:2}.console{fill:#edf8ff;stroke:#74bff1;stroke-width:2}.card{fill:#fff;stroke:#c8d6e6;stroke-width:2}.dash{fill:#041a16;stroke:#2e6a83;stroke-width:2}.mgmt{fill:#fbfdff;stroke:#c9d7e8;stroke-width:2;stroke-dasharray:5 5}.title{font:700 26px Arial,Helvetica,sans-serif;fill:#0b1736}.h1{font:700 24px Arial,Helvetica,sans-serif;fill:#0b1736}.h2{font:700 19px Arial,Helvetica,sans-serif;fill:#0b1736}.body{font:16px Arial,Helvetica,sans-serif;fill:#283a54}.small{font:13px Arial,Helvetica,sans-serif;fill:#506278}.tiny{font:11px Arial,Helvetica,sans-serif;fill:#8aa19a}.white{font:700 14px Arial,Helvetica,sans-serif;fill:#eef8f4}.blue{fill:#0875d1}.icon{stroke:#073b4c;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.redIcon{stroke:#e21b1b;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.arrow{stroke:#0875d1;stroke-width:5;fill:none;marker-end:url(#arrow)}.darkArrow{stroke:#0b1736;stroke-width:4;fill:none;marker-end:url(#darkArrow)}
     </style>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L9,3 z" fill="#0b75d1"/>
-    </marker>
-    <marker id="darkArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L9,3 z" fill="#0b1736"/>
-    </marker>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0875d1"/></marker>
+    <marker id="darkArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0b1736"/></marker>
   </defs>
+  <rect class="page" width="1800" height="720"/>
 
-  <rect class="bg" width="1500" height="680"/>
+  <rect class="source" x="24" y="95" width="220" height="465" rx="10"/>
+  <text class="h2" x="134" y="138" text-anchor="middle">Payment Transactions</text>
+  <text class="h2" x="134" y="164" text-anchor="middle">(Source System)</text>
+  <rect class="icon" x="94" y="215" width="76" height="48" rx="6"/>
+  <line class="icon" x1="108" y1="235" x2="156" y2="235"/><line class="icon" x1="108" y1="249" x2="132" y2="249"/>
+  <text class="body" x="134" y="315" text-anchor="middle">Card, online,</text>
+  <text class="body" x="134" y="340" text-anchor="middle">and transfer activity</text>
+  <path class="darkArrow" d="M134 360 V430"/>
+  <ellipse class="icon" cx="134" cy="450" rx="42" ry="16"/>
+  <path class="icon" d="M92 450v52c0 9 19 16 42 16s42-7 42-16v-52"/>
+  <path class="icon" d="M92 476c0 9 19 16 42 16s42-7 42-16"/>
+  <text class="h2" x="134" y="538" text-anchor="middle">Oracle AI</text>
+  <text class="h2" x="134" y="562" text-anchor="middle">Autonomous Database</text>
 
-  <rect class="panel" x="10" y="86" width="225" height="430" rx="8"/>
-  <text class="h2" x="112" y="122" text-anchor="middle">Payment Transactions</text>
-  <text class="h2" x="112" y="146" text-anchor="middle">(Source System)</text>
-  <rect class="icon" x="78" y="188" width="58" height="38" rx="4"/>
-  <line class="icon" x1="88" y1="204" x2="126" y2="204"/>
-  <line class="icon" x1="88" y1="216" x2="107" y2="216"/>
-  <text class="body" x="112" y="274" text-anchor="middle">Card, online,</text>
-  <text class="body" x="112" y="298" text-anchor="middle">and transfer activity</text>
-  <path class="darkline" d="M112 315 V384"/>
-  <ellipse class="icon" cx="112" cy="404" rx="36" ry="14"/>
-  <path class="icon" d="M76 404v42c0 8 16 14 36 14s36-6 36-14v-42"/>
-  <path class="icon" d="M76 424c0 8 16 14 36 14s36-6 36-14"/>
-  <text class="h2" x="112" y="486" text-anchor="middle">Oracle AI</text>
-  <text class="h2" x="112" y="511" text-anchor="middle">Autonomous Database</text>
-  <text class="body" x="112" y="536" text-anchor="middle">(Transaction data)</text>
+  <rect class="outer" x="285" y="35" width="1490" height="505" rx="10"/>
+  <path class="redIcon" d="M330 78c0-14 12-26 26-26 11 0 20 6 24 16 6-5 13-8 22-8 19 0 34 15 34 34H330c-11 0-20-9-20-20s9-20 20-20"/>
+  <text class="title" x="455" y="80">Oracle Cloud Infrastructure (OCI)</text>
 
-  <rect class="oci" x="260" y="18" width="1515" height="510" rx="8"/>
-  <path class="redIcon" d="M302 58c0-13 11-24 24-24 10 0 19 6 22 15 5-4 11-6 18-6 17 0 30 13 30 30h-94c-10 0-18-8-18-18s8-18 18-18"/>
-  <text class="h1" x="408" y="58">Oracle Cloud Infrastructure (OCI)</text>
+  <rect class="gg" x="320" y="110" width="370" height="385" rx="10"/>
+  <text class="h1" x="505" y="150" text-anchor="middle">OCI GoldenGate</text>
+  <text class="body" x="505" y="178" text-anchor="middle">Real-time data capture and distribution</text>
+  <rect class="card" x="355" y="225" width="300" height="220" rx="10"/>
+  <path class="redIcon" d="M410 270h34l28 28v60h-62z"/><path class="redIcon" d="M444 270v28h28"/>
+  <text class="h2" x="510" y="295">Extract</text>
+  <text class="body" x="510" y="322">Capture changes</text>
+  <text class="body" x="510" y="348">from source database</text>
+  <path class="darkArrow" d="M428 372 V415"/>
+  <path class="redIcon" d="M394 427c20-20 47 20 70 0s47 20 70 0"/>
+  <path class="redIcon" d="M394 450c20-20 47 20 70 0s47 20 70 0"/>
+  <text class="h2" x="510" y="423">Data Stream</text>
+  <text class="body" x="510" y="450">Publish changes using AsyncAPI</text>
 
-  <circle class="blue" cx="235" cy="210" r="18"/>
-  <text x="235" y="216" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="700">1</text>
-  <path class="arrow" d="M238 292 H278"/>
+  <rect class="paf" x="765" y="110" width="380" height="385" rx="10"/>
+  <text class="h1" x="955" y="150" text-anchor="middle">Oracle AI Database</text>
+  <text class="h1" x="955" y="180" text-anchor="middle">Private Agent Factory (PAF)</text>
+  <text class="body" x="955" y="209" text-anchor="middle">Build, run, and govern AI agents</text>
+  <rect class="card" x="800" y="255" width="310" height="190" rx="10"/>
+  <path class="icon" d="M865 305l10 24 26 8-26 9-10 24-10-24-26-9 26-8z"/>
+  <path class="icon" d="M920 326l6 14 15 5-15 5-6 14-6-14-15-5 15-5z"/>
+  <text class="h2" x="955" y="305" text-anchor="middle">Fraud Monitoring Agent</text>
+  <text class="body" x="955" y="362" text-anchor="middle">Analyze transactions, score risk,</text>
+  <text class="body" x="955" y="388" text-anchor="middle">identify suspicious activity, and</text>
+  <text class="body" x="955" y="414" text-anchor="middle">explain results with evidence</text>
 
-  <rect class="gg" x="275" y="78" width="325" height="395" rx="8"/>
-  <path class="redIcon" d="M336 149c0-24 20-44 44-44 18 0 34 11 40 27 8-6 18-10 29-10 29 0 52 23 52 52H336c-20 0-36-16-36-36s16-36 36-36"/>
-  <text x="397" y="135" font-family="Arial" font-size="28" font-weight="700" fill="#e21b1b">ORACLE</text>
-  <text class="h1" x="397" y="169">OCI GoldenGate</text>
-  <text class="small" x="397" y="195">Real-time data capture and distribution</text>
-  <rect class="card" x="305" y="230" width="240" height="235" rx="8"/>
-  <path class="redIcon" d="M356 274h24l22 22v44h-46z"/>
-  <path class="redIcon" d="M380 274v22h22"/>
-  <text class="h2" x="430" y="290">Extract</text>
-  <text class="body" x="430" y="314">Capture changes</text>
-  <text class="body" x="430" y="338">from source database</text>
-  <path class="darkline" d="M370 352 V405"/>
-  <path class="redIcon" d="M345 425c18-20 42 20 62 0s42 20 62 0"/>
-  <path class="redIcon" d="M345 446c18-20 42 20 62 0s42 20 62 0"/>
-  <text class="h2" x="430" y="430">Data Stream</text>
-  <text class="body" x="430" y="454">Publish changes using</text>
-  <text class="body" x="430" y="478">OCI GoldenGate Data Streams</text>
-  <text class="body" x="430" y="502">(AsyncAPI)</text>
+  <rect class="console" x="1220" y="70" width="520" height="425" rx="10"/>
+  <rect class="icon" x="1280" y="112" width="54" height="40" rx="4"/><path class="icon" d="M1307 152v28M1282 180h50"/>
+  <text class="h1" x="1360" y="125">Enterprise Fraud Monitoring Console</text>
+  <text class="body" x="1360" y="154">Internal real-time transaction surveillance</text>
+  <rect class="dash" x="1248" y="205" width="465" height="250" rx="8"/>
+  <text class="tiny" x="1270" y="230">GLOBAL BANK FRAUD OPERATIONS</text>
+  <text class="white" x="1270" y="254">Enterprise Fraud Monitoring Console</text>
+  <rect x="1270" y="282" width="112" height="48" rx="5" fill="#092a23" stroke="#1f4d42"/>
+  <rect x="1395" y="282" width="112" height="48" rx="5" fill="#092a23" stroke="#1f4d42"/>
+  <rect x="1520" y="282" width="112" height="48" rx="5" fill="#092a23" stroke="#1f4d42"/>
+  <text class="tiny" x="1286" y="302">EVENTS</text><text class="white" x="1286" y="321">5</text>
+  <text class="tiny" x="1411" y="302">SIGNALS</text><text class="white" x="1411" y="321">10</text>
+  <text class="tiny" x="1536" y="302">BRIEFS</text><text class="white" x="1536" y="321">5</text>
+  <rect x="1270" y="355" width="140" height="75" rx="5" fill="#092a23" stroke="#1f4d42"/>
+  <rect x="1425" y="355" width="120" height="75" rx="5" fill="#092a23" stroke="#1f4d42"/>
+  <rect x="1560" y="355" width="125" height="75" rx="5" fill="#092a23" stroke="#1f4d42"/>
+  <text class="white" x="1286" y="383">900001</text><rect x="1350" y="368" width="38" height="18" rx="9" fill="#ff5f7a"/>
+  <text class="white" x="1440" y="392">Risk Score</text><text class="white" x="1575" y="382">PAF Brief</text>
+  <rect x="1575" y="398" width="88" height="18" rx="9" fill="#0b5e86"/>
 
-  <circle class="blue" cx="560" cy="244" r="18"/>
-  <text x="560" y="250" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="700">2</text>
-  <path class="arrow" d="M600 322 H662"/>
+  <circle class="blue" cx="265" cy="315" r="20"/><text x="265" y="322" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="700">1</text>
+  <path class="arrow" d="M245 315 H315"/>
+  <circle class="blue" cx="715" cy="315" r="20"/><text x="715" y="322" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="700">2</text>
+  <path class="arrow" d="M690 315 H760"/>
+  <circle class="blue" cx="1180" cy="315" r="20"/><text x="1180" y="322" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="700">3</text>
+  <path class="arrow" d="M1145 315 H1218"/>
 
-  <rect class="paf" x="645" y="82" width="410" height="390" rx="8"/>
-  <path class="icon" d="M704 163c-12-6-20-18-20-33 0-21 17-38 38-38 10 0 19 4 26 11 7-7 16-11 26-11 21 0 38 17 38 38 0 15-8 27-20 33"/>
-  <path class="icon" d="M748 103v88M704 130h88"/>
-  <text class="h1" x="735" y="132">Oracle AI Database</text>
-  <text class="h1" x="735" y="160">Private Agent Factory (PAF)</text>
-  <text class="body" x="735" y="190">Build, run, and govern AI agents</text>
-  <text class="body" x="735" y="214">with enterprise data</text>
-  <rect class="card" x="663" y="254" width="240" height="195" rx="8"/>
-  <path class="icon" d="M704 330c-18 8-30 26-30 46 0 27 22 49 49 49 20 0 38-12 45-30"/>
-  <path class="icon" d="M721 290l8 19 20 6-20 7-8 19-8-19-20-7 20-6z"/>
-  <path class="icon" d="M766 313l5 11 12 4-12 4-5 11-5-11-12-4 12-4z"/>
-  <text class="h2" x="725" y="288">Fraud Monitoring Agent</text>
-  <text class="body" x="675" y="368">Analyze transactions, score risk,</text>
-  <text class="body" x="675" y="393">identify suspicious activity, and</text>
-  <text class="body" x="675" y="418">provide explanations grounded</text>
-  <text class="body" x="675" y="443">in transaction evidence</text>
-
-  <circle class="blue" cx="1045" cy="276" r="18"/>
-  <text x="1045" y="282" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="700">3</text>
-  <path class="arrow" d="M1036 348 H1168"/>
-
-  <rect class="console" x="1165" y="32" width="590" height="455" rx="8"/>
-  <rect class="icon" x="1228" y="68" width="44" height="33" rx="2"/>
-  <path class="icon" d="M1250 101v22M1230 123h40"/>
-  <text class="h1" x="1290" y="80">Enterprise Fraud Monitoring Console</text>
-  <text class="body" x="1290" y="108">Internal real-time transaction surveillance</text>
-  <rect class="dash" x="1185" y="130" width="540" height="330" rx="8"/>
-  <text class="dashText" x="1204" y="154">GLOBAL BANK FRAUD OPERATIONS</text>
-  <text class="whiteText" x="1204" y="178">Enterprise Fraud Monitoring Console</text>
-  <rect class="metric" x="1204" y="205" width="118" height="48" rx="4"/>
-  <rect class="metric" x="1334" y="205" width="118" height="48" rx="4"/>
-  <rect class="metric" x="1464" y="205" width="118" height="48" rx="4"/>
-  <text class="dashText" x="1220" y="224">EVENTS</text><text class="whiteText" x="1220" y="246">5</text>
-  <text class="dashText" x="1350" y="224">SIGNALS</text><text class="whiteText" x="1350" y="246">10</text>
-  <text class="dashText" x="1480" y="224">BRIEFS</text><text class="whiteText" x="1480" y="246">5</text>
-  <rect class="metric" x="1204" y="275" width="160" height="155" rx="4"/>
-  <rect class="metric" x="1374" y="275" width="140" height="155" rx="4"/>
-  <rect class="metric" x="1524" y="275" width="175" height="155" rx="4"/>
-  <text class="whiteText" x="1220" y="302">900003</text><rect class="badgeLow" x="1317" y="288" width="36" height="18" rx="9"/>
-  <text class="whiteText" x="1220" y="350">900002</text><rect class="badgeHigh" x="1317" y="336" width="36" height="18" rx="9"/>
-  <text class="whiteText" x="1220" y="398">900001</text><rect class="badgeHigh" x="1317" y="384" width="36" height="18" rx="9"/>
-  <rect x="1390" y="306" width="108" height="60" rx="5" fill="#0b2a24" stroke="#1f4d42"/>
-  <text class="whiteText" x="1406" y="338">Online Electronics Store</text>
-  <text class="dashText" x="1540" y="302">AI Analyst Brief</text>
-  <rect x="1540" y="325" width="140" height="24" rx="12" fill="#0b5e86"/>
-  <text class="whiteText" x="1550" y="342">PAF response attached</text>
-  <rect x="1540" y="370" width="140" height="44" rx="5" fill="#0b2a24" stroke="#1f4d42"/>
-  <text class="dashText" x="1550" y="392">Alert Review Summary</text>
-
-  <rect class="mgmt" x="10" y="550" width="1765" height="130" rx="8"/>
-  <text class="h2" x="900" y="545" text-anchor="middle">Monitoring and Management</text>
-  <rect class="icon" x="74" y="574" width="50" height="38" rx="4"/>
-  <circle class="icon" cx="126" cy="623" r="20"/>
-  <text class="h2" x="162" y="584">OCI GoldenGate</text>
-  <text class="h2" x="162" y="610">Deployment Console</text>
-  <text class="body" x="162" y="635">Monitor and manage extracts, replicats, and data streams</text>
-  <ellipse class="icon" cx="475" cy="582" rx="36" ry="13"/>
-  <path class="icon" d="M439 582v48c0 8 16 13 36 13s36-5 36-13v-48"/>
-  <text class="h2" x="525" y="584">GoldenGate MCP Server</text>
-  <text class="body" x="525" y="611">Manage GoldenGate using natural language (MCP)</text>
-  <rect class="icon" x="820" y="575" width="50" height="52" rx="4"/>
-  <line class="icon" x1="834" y1="590" x2="856" y2="590"/>
-  <line class="icon" x1="834" y1="606" x2="856" y2="606"/>
-  <text class="h2" x="900" y="584">PAF Agent Workflow</text>
-  <text class="body" x="900" y="611">View and manage the fraud monitoring agent</text>
-  <rect class="icon" x="1264" y="575" width="52" height="52" rx="4"/>
-  <path class="icon" d="M1280 615v-20M1292 615v-34M1304 615v-48"/>
-  <text class="h2" x="1340" y="584">End-to-End Monitoring</text>
-  <text class="body" x="1340" y="611">Trace transactions from capture to streaming, storage,</text>
-  <text class="body" x="1340" y="635">risk scoring, and analysis</text>
+  <rect class="mgmt" x="24" y="585" width="1751" height="110" rx="10"/>
+  <text class="h2" x="900" y="610" text-anchor="middle">Monitoring and Management</text>
+  <rect class="icon" x="95" y="632" width="52" height="40" rx="5"/><circle class="icon" cx="150" cy="680" r="19"/>
+  <text class="h2" x="205" y="649">OCI GoldenGate Deployment Console</text>
+  <text class="body" x="205" y="675">Monitor extracts, replicats, and data streams</text>
+  <ellipse class="icon" cx="675" cy="640" rx="38" ry="14"/><path class="icon" d="M637 640v40c0 8 17 14 38 14s38-6 38-14v-40"/>
+  <text class="h2" x="745" y="649">GoldenGate MCP Server</text>
+  <text class="body" x="745" y="675">Manage GoldenGate using natural language</text>
+  <rect class="icon" x="1088" y="632" width="50" height="50" rx="5"/><line class="icon" x1="1103" y1="648" x2="1123" y2="648"/><line class="icon" x1="1103" y1="663" x2="1123" y2="663"/>
+  <text class="h2" x="1170" y="649">PAF Agent Workflow</text>
+  <text class="body" x="1170" y="675">Manage the fraud monitoring agent</text>
+  <rect class="icon" x="1475" y="632" width="50" height="50" rx="5"/><path class="icon" d="M1490 670v-18M1502 670v-30M1514 670v-42"/>
+  <text class="h2" x="1555" y="649">End-to-End Monitoring</text>
+  <text class="body" x="1555" y="675">Trace capture through AI analysis</text>
 </svg>
