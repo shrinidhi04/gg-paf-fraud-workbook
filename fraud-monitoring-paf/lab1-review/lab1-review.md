@@ -46,23 +46,19 @@ __NOTE__: If using the LiveLab Sandbox environment, select your LiveLab compartm
 
     ![GoldenGate deployment details page](images/task1-step5-1.png)
 
-You can perform the following actions on the deployment details page:
+Confirm that the GoldenGate deployment is assigned to the Autonomous Database source connection.
 
-- Review the deployment's status
-- Launch the GoldenGate service deployment console
-- Edit the deployment's name or description
-- Stop and start the deployment
-- Move the deployment to a different compartment
-- Review the deployment resource information
-- Add tags
+1. Click __Assigned connections__.
 
-6. Click __Assigned connections__.
     ![Assigned connections tab on the GoldenGate deployment](images/task1-step5-2.png)
 
-7. Locate the __ATP Fraud Source Connection__ under __Other assigned connections__ at the bottom of the screen.
+2. Locate the __ATP Fraud Source Connection__ under __Other assigned connections__ at the bottom of the screen.
 
-8. Open the connection's __Actions__ menu, and then select __Test connection__.
     ![ATP Fraud Source Connection assigned to the deployment](images/task1-step5-3.png)
+
+3. Open the connection's __Actions__ menu, and then select __Test connection__.
+
+    ![Successful connection test for the ATP Fraud Source Connection](images/task1-step5-3.png)
 
 __NOTE__: The test is successful if you see **Connectivity test passed successfully**. If the test fails, wait a minute and click **Test connection** again. Do not continue until the source connection test succeeds.
 
