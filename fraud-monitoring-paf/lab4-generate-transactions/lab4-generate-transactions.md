@@ -26,12 +26,14 @@ In this lab, you will:
    - Copy and paste it in your laptop browser to access the Compute instance.
 
 2. The noVNC session opens up and shows the Terminal. Type the following command and press Enter:
-    ![noVNC terminal with run_fraud_sql_events.sh ready to run](images/task1-step2.png)
-
 
     ```bash
     sh run_fraud_sql_events.sh
     ```
+
+    ![noVNC terminal with run_fraud_sql_events.sh ready to run](images/task1-step2.png)
+
+The script inserts demonstration payment transactions into `YAN_POS.PAYMENT_TRANSACTION`. Successful output should include generated transaction IDs that begin with `TXN-HOL-`.
 
 3. Wait for the command to complete.
 4. Record the generated transaction IDs. In this workshop, they are expected to begin with `TXN-HOL-`.
@@ -68,10 +70,11 @@ __NOTE__: If you're using the LiveLab Sandbox environment, you can find your com
     FETCH FIRST 10 ROWS ONLY;
     ```
 
-Write down at least one transaction ID and its insertion time for the next lab.
+Write down at least one transaction ID and its insertion time for the next lab. You will use this value to verify that the same transaction appears in the dashboard and in the stored AI analyst brief.
 
 You may now __proceed to the next lab__.
 
 ## Acknowledgements
 
 - **Author** - Shrinidhi Kulkarni
+- **Contributors** - Julien Testut and Denis Gray, OCI GoldenGate Product Management

@@ -65,7 +65,7 @@ You can perform the following actions on the deployment details page:
 
 8. Open the connection's __Actions__ menu, and then select __Test connection__.
 
-__NOTE__: The test is successful if you see "Connectivity test passed successfully.". Click Test connection again if the test fails. 
+__NOTE__: The test is successful if you see **Connectivity test passed successfully**. If the test fails, wait a minute and click **Test connection** again. Do not continue until the source connection test succeeds.
 
 You can also access the deployment console directly using the URL provided on the LiveLabs Sandbox login page.
 
@@ -83,11 +83,11 @@ You can also access the deployment console directly using the URL provided on th
 
 4. You will use the __GoldenGate MCP + PAF Chat__ panel to interact with OCI GoldenGate using the GoldenGate MCP server.
 
-   The following image shows the Enterprise Fraud Monitoring Console connected to the Data Stream target case store, with the GoldenGate MCP + PAF Chat panel available.
+   The above image shows the Enterprise Fraud Monitoring Console connected to the Data Stream target case store, with the GoldenGate MCP + PAF Chat panel available.
 
-    ![Enterprise Fraud Monitoring Console with GoldenGate MCP and PAF Chat panel](images/fraud-console-connected.jpg)
+5. Type `List GoldenGate extracts and replicats.` and click __Send__ to ask the MCP server to return the current list of Extracts and Replicats.
 
-5. Type `List GoldenGate extracts and replicats.` and click __Send__ to ask the MCP server to return the current list of Extracts and Replicats. It should not list any.
+   In a new lab environment, the response should indicate that no GoldenGate Extracts or Replicats are currently configured. This confirms that the next lab starts from a clean GoldenGate process state.
     ![GoldenGate MCP and PAF Chat prompt for listing extracts and replicats](images/task2-step5.png)
 
 
@@ -108,3 +108,4 @@ You may now __proceed to the next lab__.
 ## Acknowledgements
 
 - **Author** - Shrinidhi Kulkarni
+- **Contributors** - Julien Testut and Denis Gray, OCI GoldenGate Product Management

@@ -24,14 +24,17 @@ In this lab, you will:
 ## Task 1: Follow the event path
 
 1. Open the **Enterprise Fraud Monitoring Console**.
-    ![Enterprise Fraud Monitoring Console opened for pipeline validation](images/task1-step1.png)
-
    - Find the Fraud dashboard URL on the __LiveLabs Sandbox login page__.
    - Copy and paste it in your laptop browser and connect to the Enterprise Fraud Monitoring Console.
 
 2. Wait for the transactions to appear in the dashboard.
+    ![Enterprise Fraud Monitoring Console opened for pipeline validation](images/task1-step1.png)
+
+The dashboard usually updates within 30-90 seconds after the source inserts complete, depending on Extract, Data Stream, bridge, and AI response timing.
 
 **NOTE**: Do not rerun the script immediately if the dashboard is not up to date yet. First confirm that the inserts completed, then allow some time for the Extract and Data Stream to complete.
+
+If the dashboard does not update, verify the source insert from Lab 4, confirm that Extract `EXFRAUD` is running, and confirm that Data Stream `FraudTxnStream` exists before rerunning the source script.
 
    Use this path to understand the expected flow: Source Oracle Autonomous AI Database -> Extract EXFRAUD -> Trail ft -> Data Stream FraudTxnStream -> Python bridge -> Target case store -> PAF published agent -> OCI GenAI -> Stored analyst brief -> Dashboard.
 
@@ -53,6 +56,8 @@ A Python bridge processes the Data Stream event, applies the demonstration risk 
    - The risk score and risk level are displayed.
    - The case status is shown where applicable.
    - A PAF-generated analyst brief is displayed for the same transaction ID when the event is eligible.
+
+   A successful validation shows that the selected dashboard transaction, source database row, fraud case details, and PAF analyst brief all refer to the same `TXN-HOL-` transaction ID.
 
    Low-risk transactions may not create an open fraud case or trigger an AI brief if the configured threshold excludes them. Use an eligible high-risk event from the supplied DML set to validate the analyst brief.
 
@@ -93,3 +98,4 @@ You may now __proceed to the next lab__.
 ## Acknowledgements
 
 - **Author** - Shrinidhi Kulkarni
+- **Contributors** - Julien Testut and Denis Gray, OCI GoldenGate Product Management

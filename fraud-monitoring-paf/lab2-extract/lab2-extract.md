@@ -47,63 +47,68 @@ In this lab, you learn to:
 ## Task 2: Discover the source connection
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
-    ![GoldenGate MCP request to list domains](images/task2-step1-0.png)
 
-    ![GoldenGate MCP response showing the source connection](images/task2-step1-1.png)
-
-
-   List domains
+   List domains:
 
     ```text
     List the GoldenGate domains.
     ```
+
+    Confirm that the response includes the `OracleGoldenGate` domain. You will use this domain for the source connection discovery request.
+
+    ![GoldenGate MCP request to list domains](images/task2-step1-0.png)
 
    List connections:
 
     ```text
     List the GoldenGate connections in the OracleGoldenGate domain.
     ```
-   Confirm that the source connection is present. The expected connection name is:
+
+   Confirm that the response includes the source connection. The expected connection name is:
 
     ```text
     ATP_Fraud_Source_Connection
     ```
 
+   This connection points GoldenGate to the Oracle AI Autonomous Database that stores the payment transaction source table.
+
+    ![GoldenGate MCP response showing the source connection](images/task2-step1-1.png)
+
 ## Task 3: Create the Extract
 
-1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
-    ![GoldenGate MCP request to list extracts](images/task3-step1.png)
-
+1. In the **GoldenGate MCP + PAF Chat** panel, submit the following request.
 
     ```text
     List GoldenGate extracts.
     ```
 
+    ![GoldenGate MCP request to list extracts](images/task3-step1.png)
+
 In a brand new environment, it should return `No GoldenGate Extracts are configured.`
 
 2. Create the Extract using the following prompt.
-    ![GoldenGate MCP prompt to create the EXFRAUD Extract](images/task3-step2.png)
-
 
     ```text
     Create a new Extract called EXFRAUD using trail ft and the ATP connection. Capture data from table PAYMENT_TRANSACTION in schema YAN_POS.
     ```
+
+    ![GoldenGate MCP prompt to create the EXFRAUD Extract](images/task3-step2.png)
+
+The response should confirm that Extract `EXFRAUD` was created. If the operations flow asks for confirmation, missing table details, or connection details, provide the values shown in the prompt and continue.
 
 Wait until the Extract ``EXFRAUD`` is created successfully before issuing another request. If the operations flow requests confirmation or missing parameters, provide them for this Extract.
 
 ## Task 4: Start and monitor the Extract
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following requests.
-    ![GoldenGate MCP prompts to start and monitor EXFRAUD](images/task4-step1-0.png)
 
-    ![GoldenGate MCP response showing EXFRAUD status](images/task4-step1-1.png)
-
-
-   Start the Extract
+   Start the Extract:
 
     ```text
     Start extract EXFRAUD.
     ```
+
+    ![GoldenGate MCP prompts to start and monitor EXFRAUD](images/task4-step1-0.png)
 
    Then verify its details and status:
 
@@ -111,9 +116,13 @@ Wait until the Extract ``EXFRAUD`` is created successfully before issuing anothe
     Show details and status for extract EXFRAUD.
     ```
 
-The Extract should be started successfully.
+    ![GoldenGate MCP response showing EXFRAUD status](images/task4-step1-1.png)
+
+The Extract should be started successfully. The status should be `RUNNING`.
 
 Confirm that the configured trail is `ft` and that the table statement refers to `YAN_POS.PAYMENT_TRANSACTION`.
+
+These values confirm that `EXFRAUD` is capturing the payment transaction source table and writing captured changes to trail `ft`, which is used by the Data Stream in the next lab.
 
 If the Extract stops or abends, request its report:
 
@@ -136,3 +145,4 @@ You may now __proceed to the next lab__.
 ## Acknowledgements
 
 - **Author** - Shrinidhi Kulkarni
+- **Contributors** - Julien Testut and Denis Gray, OCI GoldenGate Product Management
