@@ -12,7 +12,7 @@ Estimated Workshop Time: 60-90 minutes.
 
 The lab environment uses Oracle AI Autonomous Database as the payment transaction source, OCI GoldenGate for real-time capture and streaming, Oracle AI Database Private Agent Factory for fraud analysis, and the Enterprise Fraud Monitoring Console for end-to-end monitoring.
 
-![Real-Time AI Fraud Monitoring Architecture](images/holpaf-architecture.png)
+![Real-Time AI Fraud Monitoring Architecture](images/holpaf-architecture-callout3.png)
 
 ### About Oracle Cloud Infrastructure GoldenGate
 
