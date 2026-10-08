@@ -47,8 +47,6 @@ Wait until the Data Stream is created successfully before issuing another reques
 
     Review the summary and confirm that `FraudTxnStream` exists and is associated with the trail from `EXFRAUD`.
 
-    The dashboard should show that the downstream case-store listener is connected after the Data Stream and bridge are running.
-
 3. For additional detail, request the stream YAML when the operations flow supports it:
 
     ```text

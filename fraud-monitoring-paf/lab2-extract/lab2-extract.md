@@ -44,6 +44,8 @@ In this lab, you learn to:
 
     ![GoldenGate MCP and PAF Chat panel used to submit Extract requests](images/mcp-chat-list-extracts.jpg)
 
+**NOTE**: Wait a minute or so and run the same command again if you run into an error containing the following message `Compartment quota max-on-demand-chat-request-per-minute-count is exceeded`.
+
 ## Task 2: Discover the source connection
 
 1. In the **GoldenGate MCP + PAF Chat** panel, submit the following request to list the available GoldenGate domains.

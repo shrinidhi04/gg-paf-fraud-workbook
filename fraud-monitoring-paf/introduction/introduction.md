@@ -1,4 +1,4 @@
-# Real-Time AI Fraud Monitoring with OCI GoldenGate and Private Agent Factory
+# Real-Time AI Fraud Monitoring with OCI GoldenGate and Oracle AI Database Private Agent Factory
 
 ## Introduction
 

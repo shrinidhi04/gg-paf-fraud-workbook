@@ -23,9 +23,7 @@ In this lab, you will:
 
 ## Task 1: Follow the event path
 
-1. Open the **Enterprise Fraud Monitoring Console**.
-   - Find the Fraud dashboard URL on the __LiveLabs Sandbox login page__.
-   - Copy and paste it in your laptop browser and connect to the Enterprise Fraud Monitoring Console.
+1. Open the **Enterprise Fraud Monitoring Console** using the Fraud Dashboard URL from the __LiveLabs Sandbox login page__.
 
 2. Wait for the transactions to appear in the dashboard.
     ![Enterprise Fraud Monitoring Console opened for pipeline validation](images/task1-step1.png)
@@ -42,12 +40,11 @@ A Python bridge processes the Data Stream event, applies the demonstration risk 
 
 ## Task 2: Review the transactions in the Enterprise Fraud Monitoring Console
 
-1. Return to the **Enterprise Fraud Monitoring Console** and allow time for processing.
-2. Once the dashboard is open, subsequent data should appear automatically.
-3. Find a transaction ID recorded in Lab 4.
+1. Once the dashboard is open, subsequent data should appear automatically.
+2. Find a transaction ID recorded in Lab 4.
     ![Transaction case queue showing generated transaction IDs](images/task2-step3.png)
 
-4. Select the transaction and verify:
+3. Select the transaction and verify:
     ![Selected transaction showing payment details and PAF analyst brief](images/task2-step4.png)
 
 
@@ -91,6 +88,9 @@ A Python bridge processes the Data Stream event, applies the demonstration risk 
     ![noVNC terminal running the fraud event script again](images/task4-step2.png)
 
 3. Watch for the new transaction IDs without manually reloading the page.
+
+   New transactions may take 30-90 seconds to appear, depending on Extract, Data Stream, bridge, and AI response timing.
+
 4. Verify that the selected case and displayed brief continue to refer to the same transaction.
 
 You may now __proceed to the next lab__.
