@@ -28,15 +28,15 @@ In this lab, you will:
 2. Wait for the transactions to appear in the dashboard.
     ![Enterprise Fraud Monitoring Console opened for pipeline validation](images/task1-step1.png)
 
-The dashboard usually updates within 30-90 seconds after the source inserts complete, depending on Extract, Data Stream, bridge, and AI response timing.
+   - The dashboard usually updates within 30-90 seconds after the source inserts complete, depending on Extract, Data Stream, bridge, and AI response timing.
 
-**NOTE**: Do not rerun the script immediately if the dashboard is not up to date yet. First confirm that the inserts completed, then allow some time for the Extract and Data Stream to complete.
+   - **NOTE**: Do not rerun the script immediately if the dashboard is not up to date yet. First confirm that the inserts completed, then allow some time for the Extract and Data Stream to complete.
 
-If the dashboard does not update, verify the source insert from Lab 4, confirm that Extract `EXFRAUD` is running, and confirm that Data Stream `FraudTxnStream` exists before rerunning the source script.
+   - If the dashboard does not update, verify the source insert from Lab 4, confirm that Extract `EXFRAUD` is running, and confirm that Data Stream `FraudTxnStream` exists before rerunning the source script.
 
-   Use this path to understand the expected flow: Source Oracle Autonomous AI Database -> Extract EXFRAUD -> Trail ft -> Data Stream FraudTxnStream -> Python bridge -> Target case store -> PAF published agent -> OCI GenAI -> Stored analyst brief -> Dashboard.
+   - Use this path to understand the expected flow: Source Oracle Autonomous AI Database -> Extract EXFRAUD -> Trail ft -> Data Stream FraudTxnStream -> Python bridge -> Target case store -> PAF published agent -> OCI GenAI -> Stored analyst brief -> Dashboard.
 
-A Python bridge processes the Data Stream event, applies the demonstration risk rules, writes case information, and invokes the published PAF AI Agent for an explanation. The AI response is stored and displayed in the Enterprise Fraud Monitoring Console for the corresponding transaction.
+   - A Python bridge processes the Data Stream event, applies the demonstration risk rules, writes case information, and invokes the published PAF AI Agent for an explanation. The AI response is stored and displayed in the Enterprise Fraud Monitoring Console for the corresponding transaction.
 
 ## Task 2: Review the transactions in the Enterprise Fraud Monitoring Console
 
