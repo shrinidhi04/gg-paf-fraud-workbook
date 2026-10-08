@@ -95,7 +95,7 @@ You can also access the deployment console directly using the URL provided on th
 
 2. Open the link or copy and paste it in your laptop browser to access the Compute instance.
 
-3. Type `ls -al` to review the list of files in the Home directory. Make sure that **run_fraud_sql_events.sh** is listed.
+3. Type `ls -al` to review the list of files in the Home directory. Make sure that **run\_fraud\_sql\_events.sh** is listed.
     ![noVNC terminal showing run_fraud_sql_events.sh in the home directory](images/task3-step3.png)
 
 
