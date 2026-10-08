@@ -48,3 +48,5 @@ In this workshop, you will:
 ## Acknowledgements
 
 - **Author** - Shrinidhi Kulkarni
+- **Contributors** - Julien Testut, Denis Gray
+- **Team** - OCI GoldenGate Product Management
