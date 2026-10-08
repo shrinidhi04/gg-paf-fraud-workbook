@@ -1,4 +1,4 @@
-# Real-Time AI Fraud Monitoring with OCI GoldenGate and Private Agent Factory
+# Real-Time AI Fraud Monitoring with OCI GoldenGate and Oracle AI Database Private Agent Factory
 
 LiveLabs workbook draft for the single-compute fraud monitoring HOL.
 
